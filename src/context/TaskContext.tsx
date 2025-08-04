@@ -4,6 +4,8 @@ export interface Task {
   id: string;
   title: string;
   completed: boolean;
+  deadline?: string;
+  priority?: 'low' | 'medium' | 'high';
 }
 
 type TaskState = {
