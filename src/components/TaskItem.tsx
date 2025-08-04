@@ -7,7 +7,11 @@ export default function TaskItem({ task }: { task: Task }) {
   return (
     <div className="flex justify-between items-center bg-white dark:bg-gray-700 rounded p-3 shadow mt-2">
       <span
-        className={\`cursor-pointer \${task.completed ? 'line-through text-gray-500' : ''}\`}
+        className={
+          task.completed
+            ? 'cursor-pointer line-through text-gray-500'
+            : 'cursor-pointer'
+        }
         onClick={() => dispatch({ type: 'TOGGLE', payload: task.id })}
       >
         {task.title}

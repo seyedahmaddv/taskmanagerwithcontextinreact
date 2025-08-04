@@ -1,0 +1,40 @@
+{
+  "name": "taskwise-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "postcss.config.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seyedahmaddv/taskmanagerwithcontextinreact.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/seyedahmaddv/taskmanagerwithcontextinreact/issues"
+  },
+  "homepage": "https://github.com/seyedahmaddv/taskmanagerwithcontextinreact#readme",
+  "dependencies": {
+    "@types/uuid": "^10.0.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.9.2",
+    "vite": "^7.0.6"
+  }
+}
