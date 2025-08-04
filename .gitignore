@@ -1,0 +1,22 @@
+# Dependency directories
+node_modules/
+.pnpm-store/
+
+# Build files
+dist/
+.vite/
+
+# Cache
+.cache/
+*.log
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# System
+.DS_Store
