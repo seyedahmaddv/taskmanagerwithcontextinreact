@@ -37,9 +37,14 @@ export default function TaskForm() {
         onChange={e => setTitle(e.target.value)}
         placeholder="Enter task"
       />
-      <div className="flex gap-2">
-        <TaskDeadlineInput value={deadline} onChange={setDeadline} />
-        <TaskPrioritySelect value={priority} onChange={setPriority} />
+
+      <div className="flex gap-2 items-center">
+        <label className="text-sm font-medium text-gray-700 dark:text-gray-200">Deadline:
+          <TaskDeadlineInput value={deadline} onChange={setDeadline} />
+        </label>
+        <label className="text-sm font-medium text-gray-700 dark:text-gray-200">Priority:
+          <TaskPrioritySelect value={priority} onChange={setPriority} />
+        </label>
       </div>
       <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
         Add
