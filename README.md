@@ -220,6 +220,6 @@ Entwickelt von Seyed Ahmad (Frontend-Entwickler)
 
 ### شبکه‌های اجتماعی | Social Media
 
-- دنبال کردن من به زبان فارسی در [ویرگول](https://virgool.io/@seyedahmaddv)
-- Follow me on Dev[Dev.to](https://dev.to/seyedahmaddv)
+- Follow my Persian Articles on Virgool[ویرگول](https://virgool.io/@seyedahmaddv)
+- Follow my English Articles on Dev[Dev.to](https://dev.to/seyedahmaddv)
 - [Contact me or Know More me](https://www.linkedin.com/in/seyedahmaddv)
