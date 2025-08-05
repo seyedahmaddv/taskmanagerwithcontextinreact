@@ -1,8 +1,15 @@
 import { Task } from '../context/TaskContext';
 import { useTasks } from '../context/TaskContext';
+import AddToGoogleCalendarButton from './AddToGoogleCalendarButton';
+
+
 
 export default function TaskItem({ task }: { task: Task }) {
   const { dispatch } = useTasks();
+  const { setTaskBeingEdited } = useTasks();
+  function setEditing(arg0: boolean): void {
+    throw new Error('Function not implemented.');
+  }
 
   return (
     <div className="flex justify-between items-center bg-white dark:bg-gray-700 rounded p-3 shadow mt-2">
@@ -22,6 +29,12 @@ export default function TaskItem({ task }: { task: Task }) {
           )}
           {task.title}
         </span>
+        {task.note && (
+          <p className="text-xs mt-1 text-gray-500">
+            <span className="font-semibold">Note:</span> {task.note}
+          </p>
+        )}
+
         <div className="flex gap-4 mt-1 text-xs text-gray-500 items-center">
           {task.deadline && (
             <span className="flex items-center gap-1">
@@ -31,17 +44,30 @@ export default function TaskItem({ task }: { task: Task }) {
             </span>
           )}
           {task.priority && (
-            <span className={`px-2 py-1 rounded font-bold flex items-center gap-1 ${
-              task.priority === 'high' ? 'bg-red-100 text-red-700' :
+            <span className={`px-2 py-1 rounded font-bold flex items-center gap-1 ${task.priority === 'high' ? 'bg-red-100 text-red-700' :
               task.priority === 'medium' ? 'bg-yellow-100 text-yellow-700' :
-              'bg-green-100 text-green-700'
-            }`}>
+                'bg-green-100 text-green-700'
+              }`}>
               <span className="font-semibold">Priority:</span>
               {task.priority.charAt(0).toUpperCase() + task.priority.slice(1)}
             </span>
           )}
+          {/* اضافه کردن دکمه گوگل کلندر فقط اگر deadline داشته باشه */}
+          {task.deadline && (
+            <AddToGoogleCalendarButton
+              title={task.title}
+              details={`Priority: ${task.priority}\n${task.note || ''}`}
+              dateTime={task.deadline}
+            />
+          )}
         </div>
       </div>
+      <button
+        onClick={() => setTaskBeingEdited(task)}
+        className="text-blue-600 hover:text-blue-800 text-sm"
+      >
+        Edit
+      </button>
       <button
         onClick={() => dispatch({ type: 'REMOVE', payload: task.id })}
         className="text-red-500 hover:text-red-700 ml-2"
