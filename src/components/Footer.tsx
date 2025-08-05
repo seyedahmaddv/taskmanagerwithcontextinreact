@@ -11,6 +11,7 @@ export default function Footer() {
           After writing your tasks, click on any completed task to mark it as done with a green checkmark, showing your success in achieving your goals.
           This ReactJS app is developed by Seyed Ahmad (<a href="https://www.linkedin.com/in/seyedahmaddv" target="_blank" rel="noopener noreferrer" className="underline">LinkedIn</a>) and uses the Context API introduced in <strong>React 19</strong>.</p>
           <p>If you want to collaborate with me for React app development, feel free to contact me (<a href="https://www.linkedin.com/in/seyedahmaddv" target="_blank" rel="noopener noreferrer" className="underline">LinkedIn</a>).</p>
+          <a target="_blank" href="https://icons8.com/icon/XTwDewtklGCW/reminders">Reminders</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
         </div>
       </div>
     </footer>

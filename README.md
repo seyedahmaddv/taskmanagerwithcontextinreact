@@ -216,6 +216,11 @@ Entwickelt von Seyed Ahmad (Frontend-Entwickler)
 - uuid zur eindeutigen ID-Erstellung im TaskForm-Komponenten
 - TypeScript für Codequalität und Sicherheit
 
+## Credits
+
+- [Reminders](https://icons8.com/icon/XTwDewtklGCW/reminders) icon by [Icons8](https://icons8.com)
+
+
 ---
 
 ### شبکه‌های اجتماعی | Social Media
